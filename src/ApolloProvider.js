@@ -12,7 +12,7 @@ import { onError } from "@apollo/client/link/error";
 import { setContext } from "@apollo/client/link/context";
 
 const httpLink = createHttpLink({
-  uri: "http://localhost:5000",
+  uri: "https://hidden-savannah-33682.herokuapp.com/",
 });
 
 const errorLink = onError(({ graphQLErrors, networkError }) => {
